@@ -22,6 +22,7 @@ module.exports = {
   ** Global CSS
   */
   css: [
+    '~assets/global.less',
     'ant-design-vue/dist/antd.css'
   ],
   /*
@@ -39,7 +40,17 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxtjs/style-resources',
   ],
+  /*
+  ** Nuxt.js modules
+  */
+  styleResources: {
+    sass: [],
+    scss: [],
+    less: ['./assets/vars/*.less'],
+    stylus: []
+  },
   /*
   ** Build configuration
   */
