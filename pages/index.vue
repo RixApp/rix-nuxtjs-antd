@@ -1,38 +1,28 @@
 <template>
   <div class="container">
-    <div>
-      <h1 class="title">
-			-
-      </h1>
-      <h2 class="subtitle">
-        My doozie Nuxt.js project
-      </h2>
-      <div class="links">
-        <a
-          href=""
-          target="_blank"
-          class="button--green"
-        >
-          -
-        </a>
-        <a
-          href=""
-          target="_blank"
-          class="button--grey"
-        >
-				-
-        </a>
-      </div>
-    </div>
+    <IndexTemplate />
   </div>
 </template>
 
-<script>
-export default {
+<script type="ts">
+import { Component, Prop, Vue } from 'vue-property-decorator';
+import IndexTemplate from '~/components/templates/IndexTemplate.vue';
+
+@Component({
+  props: {
+    propTitle: String
+  },
   components: {
+    IndexTemplate
+  }
+})
+class Index extends Vue {
+  mounted () {
+    return {
+      formLayout: 'horizontal'
+    }
   }
 }
-</script>
 
-<style>
-</style>
+export default Index;
+</script>
