@@ -35,8 +35,11 @@ module.exports = {
   ** Nuxt.js dev-modules
   */
   buildModules: [
+    // Doc: https://github.com/nuxt-community/eslint-module
+    '@nuxtjs/eslint-module',
+    '@nuxt/typescript-build'
   ],
-  /*
+	/*
   ** Nuxt.js modules
   */
   modules: [
@@ -50,6 +53,21 @@ module.exports = {
     scss: [],
     less: ['./assets/vars/*.less'],
     stylus: []
+  },
+  /*
+  ** Nuxt.js extends
+  */
+  extends: [
+    'plugin:vue/base',
+    '@nuxtjs/eslint-config-typescript'
+  ],
+  /*
+  ** Nuxt.js typescript
+  */
+  typescript: {
+    typeCheck: {
+      eslint: true
+    }
   },
   /*
   ** Build configuration
