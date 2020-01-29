@@ -33,7 +33,6 @@
     "less-loader": "^5.0.0",
     "lodash": "^4.17.15",
     "nuxt": "^2.0.0",
-    "sentry": "^0.1.2",
     "source-map": "^0.7.3",
     "vue": "^2.6.11",
     "vue-class-component": "^7.1.0",
