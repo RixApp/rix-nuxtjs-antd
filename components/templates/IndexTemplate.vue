@@ -1,14 +1,23 @@
 <template class="template">
-  <div class="container">
+  <a-layout>
     Hi from IndexTemplate!
-  </div>
+    <NavBar />
+  </a-layout>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 // import { Component, Prop, Vue } from 'vue-property-decorator';
+import NavBar from '../primary/NavBar/index.vue';
 
-@Component
+@Component({
+  props: {
+    propTitle: String,
+  },
+  components: {
+    NavBar,
+  },
+})
 class IndexTemplate extends Vue {
   mounted = () => ({
     formLayout: 'horizontal',
@@ -19,12 +28,4 @@ export default IndexTemplate;
 </script>
 
 <style style="sass" scoped>
-.container {
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-color: #E6E4E4;
-}
 </style>
