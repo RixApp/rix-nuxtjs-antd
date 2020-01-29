@@ -2,6 +2,7 @@
   <a-layout>
     Hi from IndexTemplate!
     <NavBar />
+    <SideBar />
   </a-layout>
 </template>
 
@@ -9,6 +10,7 @@
 import { Component, Vue } from 'vue-property-decorator';
 // import { Component, Prop, Vue } from 'vue-property-decorator';
 import NavBar from '../primary/NavBar/index.vue';
+import SideBar from '../primary/SideBar/index.vue';
 
 @Component({
   props: {
@@ -16,6 +18,7 @@ import NavBar from '../primary/NavBar/index.vue';
   },
   components: {
     NavBar,
+    SideBar,
   },
 })
 class IndexTemplate extends Vue {
