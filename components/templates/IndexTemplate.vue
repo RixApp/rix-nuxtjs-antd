@@ -1,7 +1,10 @@
 <template>
   <a-layout id="components-layout">
     <SideBar />
-    <LayoutContent />
+    <a-layout style="padding: 0 24px 24px">
+      <Breadcrum />
+      <LayoutContent />
+    </a-layout>
   </a-layout>
 </template>
 
@@ -9,6 +12,7 @@
 import { Component, Vue } from 'vue-property-decorator';
 // import { Component, Prop, Vue } from 'vue-property-decorator';
 import SideBar from '../primary/SideBar/index.vue';
+import Breadcrum from '../primary/Breadcrum/index.vue';
 import LayoutContent from '../primary/LayoutContent/index.vue';
 
 @Component({
@@ -17,6 +21,7 @@ import LayoutContent from '../primary/LayoutContent/index.vue';
   },
   components: {
     SideBar,
+    Breadcrum,
     LayoutContent,
   },
 })

@@ -1,9 +1,9 @@
 <template>
-  <a-layout-content
-    :style="{ background: '#fff', padding: '24px', margin: 0, minHeight: '535px' }"
-  >
-    Content ------
-  </a-layout-content>
+  <a-breadcrumb style="margin: 16px 0">
+    <a-breadcrumb-item>Home</a-breadcrumb-item>
+    <a-breadcrumb-item>List</a-breadcrumb-item>
+    <a-breadcrumb-item>App</a-breadcrumb-item>
+  </a-breadcrumb>
 </template>
 
 <script lang="ts">
@@ -11,7 +11,6 @@ import { Component, Vue } from 'vue-property-decorator';
 
 @Component({
   props: {
-    contentType: String,
     collapsed: Boolean,
   },
 })
