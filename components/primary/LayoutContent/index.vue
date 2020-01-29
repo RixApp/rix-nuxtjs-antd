@@ -6,7 +6,7 @@
       <a-breadcrumb-item>App</a-breadcrumb-item>
     </a-breadcrumb>
     <a-layout-content
-      :style="{ background: '#fff', padding: '24px', margin: 0, minHeight: '280px' }"
+      :style="{ background: '#fff', padding: '24px', margin: 0, minHeight: '535px' }"
     >
       Content
     </a-layout-content>

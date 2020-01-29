@@ -8,7 +8,7 @@
     >
       <a-sub-menu key="sub1">
         <span slot="title"><a-icon type="user" />
-          subnav 1
+          Getting started
         </span>
         <a-menu-item key="1">
           option1
@@ -25,7 +25,7 @@
       </a-sub-menu>
       <a-sub-menu key="sub2">
         <span slot="title"><a-icon type="laptop" />
-          subnav 2
+          Layout
         </span>
         <a-menu-item key="5">
           option5
@@ -42,7 +42,7 @@
       </a-sub-menu>
       <a-sub-menu key="sub3">
         <span slot="title"><a-icon type="notification" />
-          subnav 3
+          Content
         </span>
         <a-menu-item key="9">
           option9
