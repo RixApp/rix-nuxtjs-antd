@@ -1,6 +1,5 @@
 <template class="template">
   <a-layout>
-    Hi from IndexTemplate!
     <NavBar />
     <SideBar />
   </a-layout>
