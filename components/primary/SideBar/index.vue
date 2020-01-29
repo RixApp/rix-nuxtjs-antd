@@ -23,6 +23,7 @@
           option4
         </a-menu-item>
       </a-sub-menu>
+
       <a-sub-menu key="sub2">
         <span slot="title"><a-icon type="laptop" />
           Layout
@@ -40,9 +41,82 @@
           option8
         </a-menu-item>
       </a-sub-menu>
+
       <a-sub-menu key="sub3">
         <span slot="title"><a-icon type="notification" />
           Content
+        </span>
+        <a-menu-item key="9">
+          option9
+        </a-menu-item>
+        <a-menu-item key="10">
+          option10
+        </a-menu-item>
+        <a-menu-item key="11">
+          option11
+        </a-menu-item>
+        <a-menu-item key="12">
+          option12
+        </a-menu-item>
+      </a-sub-menu>
+
+      <a-sub-menu key="sub3">
+        <span slot="title"><a-icon type="notification" />
+          Components
+        </span>
+        <a-menu-item key="9">
+          option9
+        </a-menu-item>
+        <a-menu-item key="10">
+          option10
+        </a-menu-item>
+        <a-menu-item key="11">
+          option11
+        </a-menu-item>
+        <a-menu-item key="12">
+          option12
+        </a-menu-item>
+      </a-sub-menu>
+
+      <a-sub-menu key="sub3">
+        <span slot="title"><a-icon type="notification" />
+          Graphs
+        </span>
+        <a-menu-item key="9">
+          option9
+        </a-menu-item>
+        <a-menu-item key="10">
+          option10
+        </a-menu-item>
+        <a-menu-item key="11">
+          option11
+        </a-menu-item>
+        <a-menu-item key="12">
+          option12
+        </a-menu-item>
+      </a-sub-menu>
+
+      <a-sub-menu key="sub3">
+        <span slot="title"><a-icon type="notification" />
+          Icons
+        </span>
+        <a-menu-item key="9">
+          option9
+        </a-menu-item>
+        <a-menu-item key="10">
+          option10
+        </a-menu-item>
+        <a-menu-item key="11">
+          option11
+        </a-menu-item>
+        <a-menu-item key="12">
+          option12
+        </a-menu-item>
+      </a-sub-menu>
+
+      <a-sub-menu key="sub3">
+        <span slot="title"><a-icon type="notification" />
+          Utilities
         </span>
         <a-menu-item key="9">
           option9
