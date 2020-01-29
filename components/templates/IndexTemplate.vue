@@ -5,15 +5,14 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from 'vue-property-decorator';
+import { Component, Vue } from 'vue-property-decorator';
+// import { Component, Prop, Vue } from 'vue-property-decorator';
 
 @Component
 class IndexTemplate extends Vue {
-  mounted () {
-    return {
-      formLayout: 'horizontal'
-    }
-  }
+  mounted = () => ({
+    formLayout: 'horizontal',
+  });
 }
 
 export default IndexTemplate;

@@ -5,23 +5,22 @@
 </template>
 
 <script type="ts">
-import { Component, Prop, Vue } from 'vue-property-decorator';
-import IndexTemplate from '~/components/templates/IndexTemplate.vue';
+import { Component, Vue } from 'vue-property-decorator';
+// import { Component, Prop, Vue } from 'vue-property-decorator';
+import IndexTemplate from '../components/templates/IndexTemplate.vue';
 
 @Component({
   props: {
-    propTitle: String
+    propTitle: String,
   },
   components: {
-    IndexTemplate
-  }
+    IndexTemplate,
+  },
 })
 class Index extends Vue {
-  mounted () {
-    return {
-      formLayout: 'horizontal'
-    }
-  }
+  mounted = () => ({
+    formLayout: 'horizontal',
+  });
 }
 
 export default Index;
