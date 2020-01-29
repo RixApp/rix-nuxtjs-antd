@@ -1,5 +1,6 @@
 <template>
   <div>
+    <NavBar />
     <nuxt />
   </div>
 </template>
@@ -24,3 +25,18 @@ html {
   margin: 0;
 }
 </style>
+
+<script lang="ts">
+import { Component, Vue } from 'vue-property-decorator';
+import NavBar from '../components/primary/NavBar/index.vue';
+
+@Component({
+  components: {
+    NavBar,
+  },
+})
+class Default extends Vue {
+}
+
+export default Default;
+</script>

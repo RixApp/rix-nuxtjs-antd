@@ -1,14 +1,11 @@
 <template>
-  <div class="container">
-    <IndexTemplate />
-  </div>
+  <IndexTemplate />
 </template>
 
 <script type="ts">
 import { Component, Vue } from 'vue-property-decorator';
 // import { Component, Prop, Vue } from 'vue-property-decorator';
 import IndexTemplate from '../components/templates/IndexTemplate.vue';
-
 
 @Component({
   props: {

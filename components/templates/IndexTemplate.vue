@@ -1,6 +1,5 @@
-<template class="template">
-  <a-layout id="components-layout-demo-top-side-2">
-    <NavBar />
+<template>
+  <a-layout id="components-layout">
     <SideBar />
     <LayoutContent />
   </a-layout>
@@ -9,7 +8,6 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 // import { Component, Prop, Vue } from 'vue-property-decorator';
-import NavBar from '../primary/NavBar/index.vue';
 import SideBar from '../primary/SideBar/index.vue';
 import LayoutContent from '../primary/LayoutContent/index.vue';
 
@@ -18,7 +16,6 @@ import LayoutContent from '../primary/LayoutContent/index.vue';
     propTitle: String,
   },
   components: {
-    NavBar,
     SideBar,
     LayoutContent,
   },
@@ -33,7 +30,7 @@ export default IndexTemplate;
 </script>
 
 <style style="sass" scoped>
-#components-layout-demo-top-side-2 .logo {
+#components-layout .logo {
   width: 120px;
   height: 31px;
   background: rgba(255, 255, 255, 0.2);
